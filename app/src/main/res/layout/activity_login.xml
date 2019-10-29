@@ -111,7 +111,8 @@
                     android:gravity="center"
                     android:layout_marginLeft="40dp"
                     android:layout_marginRight="40dp"
-                    android:text="Login"/>
+                    android:text="Login"
+                    android:onClick="masuk"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -124,6 +125,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Create Account"
+                    android:onClick="pindah"
                     android:layout_marginTop="250dp"
                     android:layout_marginLeft="220dp"
                     android:textColor="#291CEB" />
