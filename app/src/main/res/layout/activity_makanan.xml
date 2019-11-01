@@ -5,4 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B8B6B6"
-    tools:context=".MakananActivity"/>
+    android:id="@+id/activity_main"
+    tools:context=".MakananActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
