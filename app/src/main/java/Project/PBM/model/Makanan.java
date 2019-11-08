@@ -1,22 +1,16 @@
 package Project.PBM.model;
 
-public class makanan {
-    private String gambar;
+public class Makanan {
+
     private String nama;
+    private String jenis;
     private String penjelasan;
 
-    public makanan(String gambar, String nama, String penjelasan) {
-        this.gambar = gambar;
+    public Makanan(String nama, String jenis, String penjelasan) {
         this.nama = nama;
+        this.jenis = jenis;
         this.penjelasan = penjelasan;
-    }
 
-    public String getGambar() {
-        return gambar;
-    }
-
-    public void setGambar(String gambar) {
-        this.gambar = gambar;
     }
 
     public String getNama() {
@@ -25,6 +19,14 @@ public class makanan {
 
     public void setNama(String nama) {
         this.nama = nama;
+    }
+
+    public String getJenis() {
+        return jenis;
+    }
+
+    public void setJenis(String jenis) {
+        this.jenis = jenis;
     }
 
     public String getPenjelasan() {

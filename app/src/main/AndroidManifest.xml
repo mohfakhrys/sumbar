@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoActionBar">
-        <activity android:name=".MakananActivity"></activity>
+        <activity android:name=".PariwisataActivity"></activity>
+        <activity android:name=".KebudayaanActivity" />
+        <activity android:name=".MakananActivity" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".SplashScreenActivity">

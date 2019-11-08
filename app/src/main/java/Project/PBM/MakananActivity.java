@@ -2,20 +2,19 @@ package Project.PBM;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import Project.PBM.adapter.Mahasiswa;
-import Project.PBM.adapter.MahasiswaAdapter;
+import Project.PBM.model.Makanan;
+import Project.PBM.adapter.MakananAdapter;
 
 public class MakananActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private MahasiswaAdapter adapter;
-    private ArrayList<Mahasiswa> mahasiswaArrayList;
+    private MakananAdapter adapter;
+    private ArrayList<Makanan> makananArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +23,9 @@ public class MakananActivity extends AppCompatActivity {
 
         addData();
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view_makanan);
 
-        adapter = new MahasiswaAdapter(mahasiswaArrayList);
+        adapter = new MakananAdapter(makananArrayList);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MakananActivity.this);
 
@@ -36,10 +35,11 @@ public class MakananActivity extends AppCompatActivity {
     }
 
     void addData(){
-        mahasiswaArrayList = new ArrayList<>();
-        mahasiswaArrayList.add(new Mahasiswa("Dimas Maulana", "1414370309", "123456789"));
-        mahasiswaArrayList.add(new Mahasiswa("Fadly Yonk", "1214234560", "987654321"));
-        mahasiswaArrayList.add(new Mahasiswa("Ariyandi Nugraha", "1214230345", "987648765"));
-        mahasiswaArrayList.add(new Mahasiswa("Aham Siswana", "1214378098", "098758124"));
+        makananArrayList = new ArrayList<>();
+        makananArrayList.add(new Makanan("Rendang", "dagin", "masakan daging dengan bumbu rempah-rempah yang berasal dari Minangkabau. Masakan ini dihasilkan dari proses memasak yang dipanaskan berulang-ulang menggunakan santan sampai kuahnya kering sama sekali. Proses memasaknya memakan waktu berjam-jam (biasanya sekitar empat jam) hingga yang tinggal hanyalah potongan daging berwarna hitam pekat. Dalam suhu ruangan, rendang dapat bertahan hingga berminggu-minggu. Rendang yang dimasak dalam waktu yang lebih singkat dan santannya belum mengering disebut kalio, berwarna cokelat terang keemasan."));
+        makananArrayList.add(new Makanan("Dendeng", "daging", "daging yang dipotong tipis menjadi serpihan yang lemaknya dipangkas, dibumbui dengan saus asam, asin atau manis dengan dikeringkan dengan api kecil atau diasinkan dan dijemur. Hasilnya adalah daging yang asin dan setengah manis dan tidak perlu disimpan di lemari es. Dendeng adalah contoh makanan yang diawetkan."));
+        makananArrayList.add(new Makanan("Gulai Ayam", "ayam", "masakan berbahan baku daging ayam, atau sayuran seperti nangka muda dan daun singkong, yang diolah dalam kuah bumbu rempah yang bercita rasa gurih. Ciri khas gulai adalah bumbunya yang kaya rempah antara lain kunyit, ketumbar, lada, lengkuas, jahe, cabai merah, bawang merah, bawang putih, adas, pala, serai, kayu manis dan jintan yang dihaluskan, dicampur, kemudian dimasak dalam santan."));
+        makananArrayList.add(new Makanan("Gulai Ikan", "ikan", "adalah masakan berbahan baku aneka ikan, sayuran seperti nangka muda dan daun singkong, yang diolah dalam kuah bumbu rempah yang bercita rasa gurih."));
+
     }
 }

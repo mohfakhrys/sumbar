@@ -6,11 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B8B6B6"
-    tools:context=".MakananActivity">
+    tools:context=".KebudayaanActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_view_makanan"
+        android:id="@+id/recycler_view_kebudayaan"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 
 </android.support.constraint.ConstraintLayout>

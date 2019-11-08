@@ -16,4 +16,8 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent = new Intent(MenuActivity.this,MakananActivity.class);
         startActivity(intent);
     }
+    public void Kebudayaan (View view){
+        Intent intent = new Intent(MenuActivity.this,KebudayaanActivity.class);
+        startActivity(intent);
+    }
 }
